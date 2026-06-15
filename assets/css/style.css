@@ -65,7 +65,6 @@ nav a:hover {
     margin-bottom: 1.2em;
 }
 
-/* Use paragraph indents only on formal written sections */
 .narrative p,
 .self-assessment p {
     text-indent: 2em;
