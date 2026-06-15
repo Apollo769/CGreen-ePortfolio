@@ -62,8 +62,13 @@ nav a:hover {
 }
 
 .card p {
-    text-indent: 2em;
     margin-bottom: 1.2em;
+}
+
+/* Use paragraph indents only on formal written sections */
+.narrative p,
+.self-assessment p {
+    text-indent: 2em;
 }
 
 .hero {
@@ -78,7 +83,7 @@ nav a:hover {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
     gap: 20px;
 }
 
@@ -140,6 +145,7 @@ figcaption {
 }
 
 @media (max-width: 800px) {
+    .grid,
     .image-comparison {
         grid-template-columns: 1fr;
     }
