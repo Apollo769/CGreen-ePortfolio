@@ -25,13 +25,43 @@
 </header>
 
 <main class="container">
+
     <section class="card">
-        <h2>Professional Self-Assessment</h2>
+
+        <h2>Artifact Overview</h2>
 
         <p>
-            Content coming soon.
+            The artifact I have selected for the Category Two enhancement is my inventory management application called A.I.M, which stands for Agile Inventory Management. This artifact is an Android mobile application that I originally created in CS-360: Mobile Architecture and Programming. The application allows users to sign in and create accounts, manage inventory items by updating and deleting items as well as adding items, and manage SMS notification permissions. For this enhancement, I focused on improving the application's use of algorithms and data structures through the implementation of search, sorting and filtering, low-stock prioritization, dynamic inventory updates, and RecyclerView performance optimizations.
         </p>
+
+        <h2>Justification of Selected Artifact</h2>
+
+        <p>
+            I selected this artifact for this enhancement because it provides an opportunity to demonstrate and expand upon the practical application of algorithms and data structures that were either weak or non-existent in the original version. The application relies on an ArrayList data structure to manage inventory items in memory and was enhanced with searching, sorting, filtering, and dynamic inventory updates. These improvements allow users to quickly locate items and identify inventory that requires attention.
+        </p>
+
+        <p>
+            The artifact was further improved through the implementation of DiffUtil within the RecyclerView adapter. Rather than refreshing the entire inventory list whenever data changes occurred, DiffUtil compares the previous and updated collections and updates only the rows that change. This optimization improves performance while demonstrating consideration of algorithmic efficiency and scalability. Additional improvements were made to automatically reapply active sorting and filtering operations whenever item quantities are modified, ensuring that inventory records remain correctly positioned according to the selected criteria.
+        </p>
+
+        <h2>Course Outcomes with Category Two</h2>
+
+        <p>
+            This enhancement successfully addressed the course outcomes related to designing, developing, and evaluating computing solutions using algorithmic principles and computer science practices. The project demonstrates the use of data structures for storing inventory information and algorithms for searching, sorting, filtering, and low-stock prioritization. The implementation of DiffUtil also provided an opportunity to evaluate performance trade-offs between a complete RecyclerView refresh and differential updates. These improvements strengthened the artifact’s ability to demonstrate practical algorithm design and data structure usage. As a result, no significant updates to my original outcome-coverage plan were necessary because the enhancement fully supports the intended course outcomes I aimed to cover.
+        </p>
+
+        <h2>Reflection on Enhancement Process</h2>
+
+        <p>
+            The enhancement process reinforced the importance of selecting appropriate data structures and algorithms based on functionality and performance requirements. While the original application successfully stored and displayed inventory data, the enhancement process highlighted how additional processing capabilities such as searching, sorting, and filtering can significantly improve usability. One of the most valuable lessons learned was the importance of considering efficiency when updating user interfaces. Implementing DiffUtil demonstrated how algorithmic comparison can reduce unnecessary processing and improve application responsiveness.
+        </p>
+
+        <p>
+            Several challenges were encountered throughout the enhancement process. One challenge involved ensuring inventory items remained correctly ordered when item quantities changed after a sort had already been applied. This required implementing logic to automatically reapply active sorting and filtering criteria whenever inventory data was modified. Another challenge involved balancing performance improvements with maintainability, particularly when introducing DiffUtil and additional update logic. Addressing these challenges improved both the functionality of the application and my understanding of how algorithmic decisions affect user experience and software performance.
+        </p>
+
     </section>
+
 </main>
 
 <footer>

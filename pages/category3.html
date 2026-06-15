@@ -25,13 +25,44 @@
 </header>
 
 <main class="container">
+
     <section class="card">
-        <h2>Professional Self-Assessment</h2>
+
+        <h2>Artifact Overview</h2>
 
         <p>
-            Content coming soon.
+            The artifact I have selected for the Category Three enhancement is my inventory management application called A.I.M, which stands for Agile Inventory Management. This artifact is an Android mobile application that I originally created in CS-360: Mobile Architecture and Programming. The application allows users to sign in and create accounts, manage inventory items by updating and deleting items as well as adding items, and manage SMS notification permissions. For this enhancement, I focused on improving the application’s database architecture by fully migrating inventory storage from local SQLite to Firebase Firestore. This enhancement included redesigning the repository layer to support cloud-based data storage, integrating Firebase Authentication with user-specific inventory collections, implementing Firestore security rules, adding input validation and error handling, and improving the application’s ability to securely manage inventory data across multiple user accounts.
         </p>
+
+        <h2>Justification of Selected Artifact</h2>
+
+        <p>
+            I selected this artifact because it demonstrates my ability to design, implement, and enhance a software solution while applying database technology and secure software development practices. The A.I.M application originally used a local SQLite database to store inventory data, which provided an opportunity to improve the application’s scalability, security, and maintainability through the implementation of a cloud-based database solution. This artifact demonstrates my ability to work with Android development, Firebase Authentication, Firebase Firestore, data validation, and further refactoring to fully align with the MVVM architecture.
+        </p>
+
+        <p>
+            The enhancement significantly improved the original application by replacing SQLite with Firestore and redesigning the repository layer to support cloud-based data operations. Additional improvements included implementing user-specific inventory collections, integrating Firebase Authentication with database access, creating Firestore security rules, adding input validation, and implementing error handling for database operations. Overall, these enhancements transformed the application from a locally stored inventory system into a secure cloud-based solution capable of supporting multiple authenticated users while maintaining data separation and integrity.
+        </p>
+
+        <h2>Course Outcomes with Category Three</h2>
+
+        <p>
+            This enhancement supported the course outcomes identified in Module One by demonstrating my ability to evaluate and implement computing solutions that address organizational and user needs while applying software engineering principles to improve existing software systems. Migrating the application from SQLite to Firestore required evaluating alternative database technologies and selecting a solution that provided improved scalability, accessibility, and security. The enhancement also demonstrated the importance of secure software development through the implementation of Firebase Authentication, user-specific data access controls, and Firestore security rules.
+            The enhancement further strengthened my understanding of database design and cloud-based application development. By redesigning the repository layer and modifying the application to support asynchronous database operations, I was able to improve the maintainability and flexibility of the application’s architecture and access control mechanisms. As a result, no significant updates to my original outcome-coverage plan were necessary because the enhancement fully supports the intended course outcomes I aimed to cover.
+        </p>
+
+        <h2>Reflection on Enhancement Process</h2>
+
+        <p>
+            This enhancement provided a valuable opportunity to work with cloud databases, authentication systems, and secure software development. One of the most important lessons I learned was the difference between local and cloud-based database architecture. Unlike SQLite, Firestore relies on asynchronous operations that require applications to manage data retrieval and updates differently. Adapting the application’s architecture to support asynchronous database communication strengthened my understanding of software design and reinforced the importance of separating responsibilities across application layers.
+        </p>
+
+        <p>
+            One challenge I encountered during the enhancement process was redesigning the repository and ViewModel layers to support Firestore while maintaining the application’s existing functionality. Additional challenges included implementing user-specific inventory storage, configuring Firestore security rules, and ensuring inventory data remained synchronized with the user interface. Testing multiple user accounts to verify data isolation further demonstrated the importance of security and access control within cloud-based applications. Through this process, I gained practical experience with cloud computing technology, database security, and application architecture, all of which contributed to my growth as a software developer.
+        </p>
+
     </section>
+
 </main>
 
 <footer>
