@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original A.I.M Project | Connor Green</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <h1>Original A.I.M Project</h1>
+    <p>Connor Green &bull; ePortfolio</p>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="code-review.html">Code Review</a>
+        <a href="enhancement.html">Enhancements</a>
+        <a href="source-code.html">Source Code</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section></section>
+
+        <p style="display: flex; justify-content: space-between;">
+            <a href="enhancement.html">Back to Enhancement Page</a>
+            <a href="category1.html">Next: Category One</a>
+        </p>
+
+        <hr>
+    </section>
+
+
+    <section class="card narrative">
+
+        <h2>Artifact Overview</h2>
+
+        <p>
+            The artifact selected for this capstone is A.I.M. (Agile Inventory Management), an Android inventory management application originally developed in CS 360: Mobile Architecture and Programming. The application was designed to provide users with a simple mobile solution for managing inventory items through an Android device. Users can create accounts, authenticate into the application, add inventory items, update item quantities, delete items, and manage SMS notification permissions.
+        </p>
+
+        <hr>
+
+        <h2>Original Functionality and Architecture</h2>
+
+        <p>
+            The original version of A.I.M. provided several core inventory management features. Users could create and authorize accounts, add new inventory records, modify existing inventory quantities, remove inventory items, and enable SMS notifications for low-stock inventory. Inventory data was stored locally using SQLite, allowing users to maintain inventory information directly on their device without requiring an internet connection. Furthermore, the original application primarily relied on a traditional Android architecture where much of the application logic was contained within activity classes. User interface logic, validation, inventory management, and database operations were often handled within the same classes. While this design allowed the application to function correctly, it resulted in tightly coupled code that limited maintainability and made future enhancements more difficult to implement.
+        </p>
+
+        <hr>
+
+        <h2>Justification of Selected Artifact</h2>
+
+        <p>
+            The A.I.M. application was selected for the capstone project because it provided several opportunities for improvement while already serving as a functional inventory management application. Although the original application successfully met the requirements of CS 360, several limitations became apparent after completing the project. The application lacked separation of concerns, relied heavily on activity classes, and used local SQLite storage that limited accessibility and scalability. Additionally, search, sorting, and filtering capabilities were absent, making inventory management less efficient as the amount of stored data increased.
+        </p>
+
+        <p>
+            Security and maintainability also provided opportunities for enhancement. User credentials were originally stored locally, and additional validation, authentication, and data management improvements could be implemented to better protect user information and improve overall application reliability. These limitations made the artifact an ideal candidate for the capstone because it provided opportunities to demonstrate growth in software engineering, algorithms and data structures, database technologies, and secure software development practices. The completed enhancements ultimately transformed the application into a more maintainable, scalable, secure, and feature-rich inventory management system while demonstrating the knowledge and skills developed throughout the Computer Science program.
+        </p>
+
+        <hr>
+
+        <h2>Original Project Branch</h2>
+
+        <ul>            
+            <li>
+                <a href="https://github.com/Apollo769/AIM-Android-App/tree/original" target="_blank">
+                        Original A.I.M. Project
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <hr>
+
+        <p style="display: flex; justify-content: space-between;">
+            <a href="enhancement.html">Back to Enhancement Page</a>
+            <a href="category1.html">Next: Category One</a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Connor Green</p>
+</footer>
+
+</body>
+</html>

@@ -10,18 +10,27 @@
 
 <header class="site-header">
     <h1>Category One - Enhancement</h1>
-    <p>Computer Science ePortfolio</p>
+    <p>Connor Green &bull; ePortfolio</p>
 
     <nav>
         <a href="../index.html">Home</a>
-        <a href="self-assessment.html">Self-Assessment</a>
         <a href="code-review.html">Code Review</a>
+        <a href="enhancement.html">Enhancements</a>
         <a href="source-code.html">Source Code</a>
     </nav>
 </header>
 
 <main class="container">
 
+    <section>
+        <p style="display: flex; justify-content: space-between;">
+            <a href="original.html">Previous: Original</a>
+            <a href="category2.html">Next: Category Two</a>
+        </p>
+
+        <hr>
+    </section>
+    
     <section class="card narrative">
 
         <h2>Artifact Overview</h2>
@@ -29,6 +38,8 @@
         <p>
             The artifact I have selected for the Category One enhancement is my inventory management application called A.I.M, which stands for Agile Inventory Management. This artifact is an Android mobile application that I originally created in CS-360: Mobile Architecture and Programming. The application allows users to sign in and create accounts, manage inventory items by updating and deleting items as well as adding items, and manage SMS notification permissions. For this enhancement, I focused on this category by improving the architecture, structure, maintainability, documentation, validation, and credential authentication in the application.
         </p>
+
+        <hr>
 
         <h2>Justification of Selected Artifact</h2>
 
@@ -40,13 +51,43 @@
             I started first with organizing the code into separate packages for the view, viewmodel, repository, data, and model layers. This helped separate responsibilities across the application. Through this process, I learned that architecture is not just about where files are placed, but also about making sure each class has a clear purpose. For example, InventoryActivity and InventoryAdapter now focus more on UI behavior, while InventoryViewModel handles validation and coordinates inventory updates. Additionally, InventoryRepository now acts as a middle layer between the ViewModel and DatabaseHelper, which helped me understand how a repository layer can reduce dependency between parts of an application and make future changes easier to manage.
         </p>
 
+        <div class="screenshot">
+            <figure>
+                <img src="../assets/images/category1/MVVM.png" alt="MVVM">
+                <figcaption>MVVM Architecture</figcaption>
+            </figure>
+        </div>
+
         <p>
             I also improved the artifact by adding validation and defensive programming. The enhanced version checks for invalid inventory inputs, such as empty item name, empty quantities, invalid quantities, email formatting, try/catch blocks, and password length requirements. I also reduced redundant and repetitive code by using helper methods where the same logic was needed in multiple places. For example, the signIn and createAccount methods both need to validate email and password input, so I centralized that shared validation into a helper method instead of repeating the same checks in both methods. This taught me how small refactoring decisions can make code easier to read, easier to update, and make the responsibilities of each method clearer.
         </p>
 
+        <div class="screenshot">
+            <figure>
+                <img src="../assets/images/category1/IVM1.png" alt="InventoryViewModel">
+                <figcaption>InventoryViewModel supporting MVVM architecture</figcaption>
+            </figure>
+        </div>
+
+        <div class="screenshot">
+            <figure>
+                <img src="../assets/images/category1/IVM2.png" alt="InventoryViewModel">
+                <figcaption>ViewModel-based inventory validation</figcaption>
+            </figure>
+        </div>
+
         <p>
             Another major improvement was replacing how login credentials are stored by replacing the original SQLite with Firebase Authentication. This was an important design improvement because user credentials are no longer stored locally in plaintext. Through this change, I learned more about how authentication should be handled and how security should be considered a part of software design, as well as how easy it is to integrate solutions like Firebase for such purposes. Finally, I updated the comments throughout the code so they explain the purpose and reasoning behind design choices instead of only describing what each line does.
         </p>
+
+        <div class="screenshot">
+            <figure>
+                <img src="../assets/images/category1/FireAuth.png" alt="Firebase Authentication">
+                <figcaption>Firebase Authentication</figcaption>
+            </figure>
+        </div>
+
+        <hr>
 
         <h2>Course Outcomes with Category One</h2>
 
@@ -57,6 +98,8 @@
         <p>
             Furthermore, it supports outcome 4 because I used software engineering techniques to improve the application. The MVVM architecture, repository layer, Firebase Auth, validation, and improved documentation all helped make the application more maintainable, secure, and structured clearly. These changes improved the artifact because the application is now easier to understand, update, and extend. Lastly, it supports outcome 5 because I improved the security of the application by replacing the local SQLite login system with Firebase Auth, which resolved the storing of login credentials in plaintext. As a result, no significant updates to my original outcome-coverage plan were necessary because the enhancement fully supports the intended course outcomes I aimed to cover.
         </p>
+
+        <hr>
 
         <h2>Reflection on Enhancement Process</h2>
 
@@ -78,11 +121,25 @@
 
         <hr>
 
+        <h2>Category One Enhancement GitHub Branch</h2>
+
+        <ul>
+            <li>
+                <a href="https://github.com/Apollo769/AIM-Android-App/tree/category1" target="_blank">
+                    Category One: Software Design and Engineering
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <hr>
+
         <p style="display: flex; justify-content: space-between;">
-            <a href="../index.html">Go to Home</a>
+            <a href="original.html">Previous: Original</a>
             <a href="category2.html">Next: Category Two</a>
         </p>
-
     </section>
 
 </main>
