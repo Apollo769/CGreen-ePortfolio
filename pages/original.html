@@ -22,6 +22,13 @@
 
 <main class="container">
 
+    <section>
+        <p style="display: flex; justify-content: space-between;">
+            <a href="enhancement.html">Back to Enhancements</a>
+            <a href="category1.html">Next: Category One</a>
+        </p>
+    </section>
+
     <section class="card narrative">
 
         <h2>Artifact Overview</h2>
@@ -38,6 +45,20 @@
             The original version of A.I.M. provided several core inventory management features. Users could create and authorize accounts, add new inventory records, modify existing inventory quantities, remove inventory items, and enable SMS notifications for low-stock inventory. Inventory data was stored locally using SQLite, allowing users to maintain inventory information directly on their device without requiring an internet connection. Furthermore, the original application primarily relied on a traditional Android architecture where much of the application logic was contained within activity classes. User interface logic, validation, inventory management, and database operations were often handled within the same classes. While this design allowed the application to function correctly, it resulted in tightly coupled code that limited maintainability and made future enhancements more difficult to implement.
         </p>
 
+        <div class="screenshot">
+            <figure>
+                <img src="../assets/images/original/OriginalArch.png" alt="OriginalArch">
+                <figcaption>Activity-based architecture</figcaption>
+            </figure>
+        </div>
+
+        <div class="screenshot">
+            <figure>
+                <img src="../assets/images/original/DBHelper.png" alt="DatabaseHelper">
+                <figcaption>DatabaseHelper for SQL operations</figcaption>
+            </figure>
+        </div>
+
         <hr>
 
         <h2>Justification of Selected Artifact</h2>
@@ -46,18 +67,32 @@
             The A.I.M. application was selected for the capstone project because it provided several opportunities for improvement while already serving as a functional inventory management application. Although the original application successfully met the requirements of CS 360, several limitations became apparent after completing the project. The application lacked separation of concerns, relied heavily on activity classes, and used local SQLite storage that limited accessibility and scalability. Additionally, search, sorting, and filtering capabilities were absent, making inventory management less efficient as the amount of stored data increased.
         </p>
 
+        <div class="screenshot">
+            <figure>
+                <img src="../assets/images/original/OrigInvAct.png" alt="InventoryActivity">
+                <figcaption>InventoryActivity</figcaption>
+            </figure>
+        </div>
+
         <p>
             Security and maintainability also provided opportunities for enhancement. User credentials were originally stored locally, and additional validation, authentication, and data management improvements could be implemented to better protect user information and improve overall application reliability. These limitations made the artifact an ideal candidate for the capstone because it provided opportunities to demonstrate growth in software engineering, algorithms and data structures, database technologies, and secure software development practices. The completed enhancements ultimately transformed the application into a more maintainable, scalable, secure, and feature-rich inventory management system while demonstrating the knowledge and skills developed throughout the Computer Science program.
         </p>
 
+        <div class="screenshot">
+            <figure>
+                <img src="../assets/images/original/WelcomeScreen.png" alt="WelcomeScreen">
+                <figcaption>Account Creation</figcaption>
+            </figure>
+        </div>
+
         <hr>
 
-        <h2>Original Project Branch</h2>
+        <h2>GitHub Branch</h2>
 
         <ul>            
             <li>
                 <a href="https://github.com/Apollo769/AIM-Android-App/tree/original" target="_blank">
-                        Original A.I.M. Project
+                        View Original A.I.M. Project Branch
                 </a>
             </li>
         </ul>
@@ -65,10 +100,8 @@
     </section>
 
     <section>
-        <hr>
-
         <p style="display: flex; justify-content: space-between;">
-            <a href="enhancement.html">Back to Enhancement Page</a>
+            <a href="enhancement.html">Back to Enhancements</a>
             <a href="category1.html">Next: Category One</a>
         </p>
     </section>

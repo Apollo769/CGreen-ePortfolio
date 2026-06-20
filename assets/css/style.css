@@ -70,6 +70,10 @@ nav a:hover {
     text-indent: 2em;
 }
 
+.link-card p {
+    text-indent: 0;
+}
+
 .hero {
     margin-bottom: 28px;
 }
@@ -102,6 +106,21 @@ nav a:hover {
 .link-card:hover {
     transform: translateY(-4px);
     border-color: #7c3aed;
+}
+
+.enhancements-grid {
+    margin-top: 30px;
+}
+
+.enhancements-grid .link-card {
+    background: #111827;
+}
+
+.ui-card {
+    grid-column: 1 / -1;
+    max-width: 520px;
+    justify-self: center;
+    width: 100%;
 }
 
 footer {
@@ -174,5 +193,11 @@ hr {
     .grid,
     .image-comparison {
         grid-template-columns: 1fr;
+    }
+
+    .grid .link-card:last-child:nth-child(odd),
+    .ui-card {
+        grid-column: auto;
+        max-width: none;
     }
 }
